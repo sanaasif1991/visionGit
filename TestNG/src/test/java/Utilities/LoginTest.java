@@ -33,7 +33,7 @@ public class LoginTest extends Connection {
 					Reporter.log("Vision Test Page is accessed");
 		
 					
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 				Assert.assertEquals("VISION", driver.getTitle());
 					Reporter.log(driver.getTitle() + " is Opened");
 	}
