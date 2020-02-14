@@ -1,0 +1,58 @@
+Selenium WebDriver project from scratch?
+install java, 
+instal eclipse,
+ install Selenium Driver Files https://selenium.dev/downloads/  i.e. Selenium Java Client Driver
+ Create a new project through File > New > Java Project
+ New > Package, New > Class, Properties->java build path->libraries->Add External JARs. add in selnium downloaded folder
+ download chrome driver also called Driver Server
+ 
+ TestNG Installation :
+  eclipse IDE -> Click on the Help option within the menu -> Select “Eclipse Marketplace..” 
+  Enter the keyword “TestNG” in the search textbox ,click on the Install button
+  verify the TestNG installation by navigating to “Preferences” from “Window” option in the menu bar
+  New ->  Java Project-> Properties->java build path->libraries->Add library->TestNG->The TestNG is now added to the Java project 
+  TestNG class: new->other ->Expand TestNG option and select “TestNG” class
+  projectname->right click-->testng-->convert to testng to generate testng.xml
+  
+  
+  testng vs junit: better annotations, allows threads, groups tests
+  
+ Dynamic web element:
+  Sometimes IDs and classes of the web element keep changing. Such web elements are called Dynamic web elements.These are database based elements.
+  XPATH: traverses path from top to bottom,difficult 2 read and manage. changes from browser to browser and for dynamic elements,
+  css selector: very lil bit fast and easyily readable
+  
+  use either, Absolute Path:path starting from the root bt if struct changes dis wil also change //WHAT WE USE
+  Relative XPath using contains or starts with text:(preferred) 
+  So you can use a relative XPath as given below to identify the web element:
+<input type="submit" id=" submit_334350" value="Subscribe">
+XPath - //input[starts-with(@id, ‘submit_’)] 
+  Now, consider another example: <input type="submit" id=" 1002-subscribe" value="Subscribe"> In this case you can write XPath as: XPath - //input[contains(@id, ‘subscribe’)]
+  
+  Page Object Model:design pattern making maintenance easy n avoiding duplication.create Object Repository for web UI elements i.e. for each web page in the application, there should be corresponding page class.
+  disadv: need skilled labor, Not a generic model.framework can be diff for diff apps,Initial effort investment in development of Automation Framework is high.
+  
+  assert: assertTrue(loginPageTitle.toLowerCase().contains("guru99 bank"));
+  
+  Page Factory is an inbuilt Page Object Model concept for Selenium WebDriver which uses @FindBy annotation to reach locator,initElements method to initialize web elements
+  
+  getAttribute() is method It returns the value of the given attribute, this method will return the value of the property with the given name, if it exists. If it does not, then the value of the attribute with the given name is returned. If neither exists, null is returned.
+ex:  autocomplete="off" title="Search" 
+driver.findElement(By.id("ddsjks")).getAttribute("title")--> search
+
+
+Explicit waits:halt program exec until the condition you pass it resolves in given time.
+FluentWait instance defines the maximum amount of time to wait for a condition, as well as the frequency with which to check the condition.
+implicit wait polls the DOM for a certain duration when trying to find any element.when certain elements on the webpage are not available immediately
+
+Assert:  Assert allows to check whether an element is on the page or not. The test will stop on the step failed,
+Verify: Verify command will check whether the element is on the page, if it is not then the test will carry on executing. 
+
+adv of Selenium: supp C#, PHP, Java, Perl, Phython, supp different OS,cross browser compatiblity,community supp
+
+ switch between frames?driver.switchTo().frame(er by its (zero-based) index or A name or ID: Select a frame by its name or ID) 
+ 
+ Mention 5 different exceptions you had in Selenium web driver?
+The 5 different exceptions you had in Selenium web drivers are
+
+WebDriverException,NoAlertPresentException,NoSuchWindowException,NoSuchElementException,TimeoutException, null pointer exception

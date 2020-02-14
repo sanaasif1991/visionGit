@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+    
+         <class name="Test.otaSetup"/> 
+  
+   <!--       <class name="Test.Customer"/>
+      
+      <groups>  
+<run>  
+<include name="SmokeTest"/>  
+</run>  
+</groups>  
+
+defined in ota setup .java pg
+
+need 2 include all class name which has these groups assigned 2 @test if you want to run those group tests. to exclude use <exclude name="group name"/>  
+
+  -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

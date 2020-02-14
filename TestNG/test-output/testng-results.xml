@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Chrome Setup is done]]>
+    </line>
+    <line>
+      <![CDATA[Vision Test Page is accessed]]>
+    </line>
+    <line>
+      <![CDATA[Window is maximized]]>
+    </line>
+    <line>
+      <![CDATA[VISION is Opened]]>
+    </line>
+    <line>
+      <![CDATA[Send UserId of krishnasivanip]]>
+    </line>
+    <line>
+      <![CDATA[Send Password of Sodium@11]]>
+    </line>
+    <line>
+      <![CDATA[Login Clicked]]>
+    </line>
+    <line>
+      <![CDATA[Successful Login.VISION HomePage entered]]>
+    </line>
+    <line>
+      <![CDATA[Vision Admin Page is accessed]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="39217" started-at="2020-01-16T16:18:46 EST" finished-at="2020-01-16T16:19:25 EST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="39217" started-at="2020-01-16T16:18:46 EST" finished-at="2020-01-16T16:19:25 EST">
+      <class name="Test.otaSetup">
+        <test-method status="PASS" signature="intialize()[pri:0, instance:Test.otaSetup@6e6c3152]" name="intialize" is-config="true" duration-ms="21643" started-at="2020-01-16T16:18:46 EST" finished-at="2020-01-16T16:19:08 EST">
+          <reporter-output>
+            <line>
+              <![CDATA[Chrome Setup is done]]>
+            </line>
+            <line>
+              <![CDATA[Vision Test Page is accessed]]>
+            </line>
+            <line>
+              <![CDATA[Window is maximized]]>
+            </line>
+            <line>
+              <![CDATA[VISION is Opened]]>
+            </line>
+            <line>
+              <![CDATA[Send UserId of krishnasivanip]]>
+            </line>
+            <line>
+              <![CDATA[Send Password of Sodium@11]]>
+            </line>
+            <line>
+              <![CDATA[Login Clicked]]>
+            </line>
+            <line>
+              <![CDATA[Successful Login.VISION HomePage entered]]>
+            </line>
+            <line>
+              <![CDATA[Vision Admin Page is accessed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- intialize -->
+        <test-method status="PASS" signature="otasetupPg()[pri:0, instance:Test.otaSetup@6e6c3152]" name="otasetupPg" duration-ms="16722" started-at="2020-01-16T16:19:08 EST" finished-at="2020-01-16T16:19:25 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- otasetupPg -->
+        <test-method status="PASS" signature="closingTest()[pri:0, instance:Test.otaSetup@6e6c3152]" name="closingTest" is-config="true" duration-ms="782" started-at="2020-01-16T16:19:25 EST" finished-at="2020-01-16T16:19:25 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closingTest -->
+      </class> <!-- Test.otaSetup -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
