@@ -20,7 +20,7 @@ public class LoginTest extends Connection {
 	public void Startup() throws IOException {
 		// Initiate driver
 		 Connection obj = new Connection();
-		driver = obj.intializeDriver();
+		driver = obj.intializeDriver("chrome");
 					Reporter.log("Chrome Setup is done");
 					System.out.print("Before test");
 		
